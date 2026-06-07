@@ -1088,6 +1088,7 @@ footer {
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
+
 @media(max-width:768px){
 
   .page{
@@ -1103,13 +1104,30 @@ footer {
     left:10px;
     right:10px;
 
-    border-radius:18px;
+    border-radius:20px;
 
     z-index:9999;
   }
 
   nav{
     padding:16px 18px;
+  }
+
+  /* =========================
+     LOGO
+  ========================= */
+
+  .nav-left{
+    gap:10px;
+  }
+
+  .logo{
+    width:58px;
+    height:32px;
+  }
+
+  nav h1{
+    font-size:2rem;
   }
 
   /* =========================
@@ -1122,6 +1140,8 @@ footer {
     flex-direction:column;
 
     justify-content:center;
+
+    align-items:center;
 
     gap:6px;
 
@@ -1142,6 +1162,26 @@ footer {
   }
 
   /* =========================
+     TOGGLE ANIMATION
+  ========================= */
+
+  .menu-toggle.active span:nth-child(1){
+    transform:
+    rotate(45deg)
+    translate(7px,7px);
+  }
+
+  .menu-toggle.active span:nth-child(2){
+    opacity:0;
+  }
+
+  .menu-toggle.active span:nth-child(3){
+    transform:
+    rotate(-45deg)
+    translate(6px,-6px);
+  }
+
+  /* =========================
      MOBILE MENU
   ========================= */
 
@@ -1150,7 +1190,7 @@ footer {
 
     position:absolute;
 
-    top:90px;
+    top:88px;
     left:10px;
     right:10px;
 
@@ -1158,21 +1198,21 @@ footer {
 
     align-items:center;
 
-    gap:24px;
+    gap:26px;
 
-    padding:35px 20px;
+    padding:34px 20px;
 
-    border-radius:24px;
+    border-radius:28px;
 
-    background:rgba(255,255,255,0.96);
+    background:#ffffff;
 
-    backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
+    overflow:hidden;
 
-    border:1px solid rgba(255,255,255,0.35);
+    border:
+    1px solid rgba(255,255,255,0.45);
 
     box-shadow:
-    0 15px 40px rgba(37,99,235,0.18);
+    0 18px 45px rgba(37,99,235,0.15);
 
     z-index:10000;
 
@@ -1184,12 +1224,12 @@ footer {
   }
 
   .menu a{
-    font-size:17px;
-    font-weight:600;
+    text-decoration:none;
+
+    font-size:1.25rem;
+    font-weight:700;
 
     color:#111827;
-
-    text-decoration:none;
 
     transition:0.3s ease;
   }
@@ -1207,27 +1247,37 @@ footer {
 
     text-align:center;
 
-    gap:50px;
+    gap:45px;
 
-    padding-top:150px;
+    padding-top:160px;
   }
 
   .hero-content h1{
-    font-size:2.7rem;
+    font-size:2.8rem;
 
-    line-height:1.2;
+    line-height:1.15;
   }
 
   .hero-content p{
     margin:auto auto 30px;
+
+    font-size:1rem;
   }
 
   .hero-btns{
     justify-content:center;
   }
 
+  .hero-image{
+    position:relative;
+
+    z-index:1;
+  }
+
   .hero-image img{
     max-width:300px;
+
+    border-radius:28px;
   }
 
   /* =========================
