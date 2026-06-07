@@ -1106,60 +1106,9 @@ footer {
     padding: 16px 18px;
   }
 
-  /* =========================
-     MENU ICON
-  ========================= */
-
   .menu-toggle {
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 3px;
-
-    cursor: pointer;
-
-    z-index: 10001;
+    display: block;
   }
-
-  .menu-toggle span {
-    width: 32px;
-    height: 3px;
-
-    border-radius: 20px;
-
-    background: #2563eb;
-
-    transition: 0.35s ease;
-
-    transform-origin: center;
-  }
-
-  /* PERFECT CROSS */
-
-  .menu-toggle.active span:nth-child(1) {
-    transform:
-      rotate(45deg)
-      translate(5px, 5px);
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform:
-      rotate(-45deg)
-      translate(5px, -5px);
-  }
-
-  /* =========================
-     MOBILE MENU
-  ========================= */
 
   .menu {
     position: absolute;
@@ -1178,18 +1127,17 @@ footer {
 
     padding: 35px 20px;
 
-    border-radius: 28px;
+    border-radius: 24px;
 
-    background: rgba(255, 255, 255, 0.82);
+    background: rgba(255, 255, 255, 0.22);
 
-    backdrop-filter: blur(28px);
-    -webkit-backdrop-filter: blur(28px);
+    backdrop-filter: blur(18px);
 
     border:
-      1px solid rgba(255, 255, 255, 0.45);
+      1px solid rgba(255, 255, 255, 0.35);
 
     box-shadow:
-      0 18px 45px rgba(37, 99, 235, 0.12);
+      0 15px 40px rgba(37, 99, 235, 0.15);
 
     opacity: 0;
     visibility: hidden;
@@ -1197,13 +1145,9 @@ footer {
     transform: translateY(-20px);
 
     transition: 0.4s ease;
-
-    z-index: 10000;
   }
 
   .menu.active {
-    display: flex;
-
     opacity: 1;
     visibility: visible;
 
@@ -1213,15 +1157,7 @@ footer {
   .menu a {
     font-size: 16px;
     font-weight: 600;
-
-    color: #111827;
-
-    text-decoration: none;
   }
-
-  /* =========================
-     HERO
-  ========================= */
 
   .hero {
     flex-direction: column-reverse;
