@@ -1143,7 +1143,7 @@ footer {
 
     align-items:center;
 
-    gap:2px;
+    gap:5px;
 
     cursor:pointer;
 
@@ -1152,13 +1152,15 @@ footer {
 
   .menu-toggle span{
     width:28px;
-    height:4px;
+    height:3px;
 
     border-radius:20px;
 
     background:#2563eb;
 
-    transition:0.4s ease;
+    transition:0.35s ease;
+
+    transform-origin:center;
   }
 
   /* =========================
@@ -1168,14 +1170,15 @@ footer {
   .menu-toggle.active span:nth-child(1){
     transform:
     rotate(45deg)
-    translate(5px,5px);
+    translate(6px,6px);
   }
 
   .menu-toggle.active span:nth-child(2){
     opacity:0;
+     transform:translateX(-10px);
   }
 
-  .menu-toggle.active span:nth-child(3){
+  .menu-toggle.active span:nth-child(2){
     transform:
     rotate(-45deg)
     translate(5px,-5px);
