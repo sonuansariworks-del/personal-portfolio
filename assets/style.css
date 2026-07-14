@@ -560,11 +560,11 @@ section h3,
     display:inline-block;
     background:#2563eb;
     color:#fff;
-    padding:8px 18px;
+    padding:4px 8px;
     border-radius:30px;
     font-size:.85rem;
-    font-weight:600;
-    margin-bottom:18px;
+    font-weight:300;
+    margin-bottom:10px;
 }
 
 /* Degree */
