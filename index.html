@@ -611,7 +611,34 @@ Message:${message}`;
       </div>
     </div>
   </section>
+<script>
+const edgeSize = 80; // Top/Bottom edge area (px)
+const scrollSpeed = 10; // Scroll speed
 
+let mouseY = 0;
+
+document.addEventListener("mousemove", (e) => {
+    mouseY = e.clientY;
+});
+
+function autoScroll() {
+    const h = window.innerHeight;
+
+    // Top Edge
+    if (mouseY < edgeSize) {
+        window.scrollBy(0, -scrollSpeed);
+    }
+
+    // Bottom Edge
+    if (mouseY > h - edgeSize) {
+        window.scrollBy(0, scrollSpeed);
+    }
+
+    requestAnimationFrame(autoScroll);
+}
+
+autoScroll();
+</script>
   <!-- FOOTER -->
   <footer>© 2026 Sonu Ansari. All Rights Reserved.</footer>
   <script src="assets/script.js"></script>
